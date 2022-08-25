@@ -1,0 +1,82 @@
+@font-face {
+    font-family: Delicious;
+    src: url('../fonts/SuperMario256.ttf');
+}
+
+@font-face {
+    font-family: Delicious;
+    font-weight: bold;
+    src: url('../fonts/SuperMario256.ttf');
+}
+
+body{
+    font-family: Delicious, 'Times New Roman', serif;
+  }
+
+.card{
+    color: #fff;
+    background-image: url(../images/max.jpg);
+    background-size: cover;
+    padding: 20px 50px 40px;
+    margin: 20px auto;
+    display: flex;
+    max-width: 800px;
+      }
+h1{
+    padding-top: 40px;
+    font-size: 2.0rem;
+}
+
+.search-form {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    box-sizing: border-box;
+    border:none;
+    border-radius: 40px;
+    border-style: none;
+}
+input[type="search" i] {
+      padding: 5px 80px;
+}
+input[type="submit" i]{
+    padding: 5px 25px;
+    color: rgb(121, 120, 120);
+}
+.degrees{
+    font-size: 20px;
+    padding-top: 20px;
+    
+}
+.condition{
+    font-size: 20px;
+    position: relative;
+    left: 120px;
+   }
+.farengheit{
+    font-size: 20px;
+    position: relative;
+    top: -4px;
+    color: #fff;
+    }
+.celsium{
+    color: #fff;
+}
+:hover.celsium{
+    color: rgb(62, 207, 62);
+}
+:hover.farengheit {
+    color: rgb(62, 207, 62);
+}
+#location-btn{
+    padding: 5px 16px;
+}
