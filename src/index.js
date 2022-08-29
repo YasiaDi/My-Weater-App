@@ -67,8 +67,8 @@ document.querySelector("#country").innerHTML = response.data.sys.country;
   document.querySelector("#wind").innerHTML = `Wind: ${Math.round(
     response.data.wind.speed)}km/h🌬️`;
   
-  document.querySelector("#description").innerHTML =
-    response.data.weather[0].main;
+   document.querySelector("#description").innerHTML =
+    response.data.weather[0].description;
 }
 
 function searchCity(city) {
