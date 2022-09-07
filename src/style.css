@@ -62,9 +62,13 @@ input[type="submit" i]{
     position: relative;
     top: -4px;
     color: #fff;
+    text-decoration: none;
+    cursor: default;
     }
 .celsium{
     color: #fff;
+    text-decoration: none;
+    cursor: default;
 }
 :hover.celsium{
     color: rgb(62, 207, 62);
