@@ -89,3 +89,9 @@ input[type="submit" i] {
 #location-btn {
   padding: 5px 16px;
 }
+small {
+  font-size: 80%;
+  box-sizing: border-box;
+  position: relative;
+  padding-left: 250px;
+}
