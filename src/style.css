@@ -69,13 +69,8 @@ input[type="submit" i] {
   text-decoration: none;
   cursor: default;
 }
-.farengheit .active {
-  color: rgb(62, 207, 62);
-  text-decoration: none;
-  cursor: default;
-}
 
-.celsium .active {
+.active {
   color: rgb(62, 207, 62);
   text-decoration: none;
   cursor: default;
