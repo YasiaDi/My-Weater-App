@@ -36,6 +36,27 @@ if (minutes < 10) {
   minutes = `0${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#weather-forecast");
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue"];
+ let forecastHTML = `<div class="row">`; 
+  days.forEach(function (day) {
+     forecastHTML =
+      forecastHTML +
+            `<div class="col-2">
+              <div class="weather-forecast-weekday">${day}</div>
+              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" width="42">
+              <div class="weather-forecast-temp">
+                <span class="weather-forecast-temp-max">23°</span>
+                <span class="weather-forecast-temp-min">16°</span>
+              </div>
+            </div>`;
+             });
+        
+ forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 let showDate = document.querySelector("#date");
 showDate.innerHTML = `${date} ${month} ${year}`;
 let showTime = document.querySelector("#time");
@@ -114,3 +135,4 @@ let currentLocationButton = document.querySelector("#location-btn");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
 searchCity("Kharkiv");
+displayForecast();
