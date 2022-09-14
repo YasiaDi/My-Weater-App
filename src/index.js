@@ -116,6 +116,8 @@ let farengheitTemp = document.querySelector("#farengheit");
 farengheitTemp.addEventListener("click", function (event) {
   event.preventDefault();
   let degreesF = document.querySelector("#degrees");
+      celsiumTemp.classList.remove("active");
+  farengheitTemp.classList.add("active");
   degreesF.innerHTML = Math.round((celsiumTemperature * 9) / 5 + 32);
 });
 
@@ -123,6 +125,8 @@ let celsiumTemp = document.querySelector("#celsium");
 celsiumTemp.addEventListener("click", function (event) {
   event.preventDefault();
   let degreesC = document.querySelector("#degrees");
+    celsiumTemp.classList.add("active");
+  farengheitTemp.classList.remove("active");
   degreesC.innerHTML = Math.round(celsiumTemperature);
 });
 
