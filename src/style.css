@@ -46,7 +46,7 @@ input {
   border-style: none;
 }
 input[type="search" i] {
-  padding: 5px 80px;
+  padding: 5px 50px;
 }
 input[type="submit" i] {
   padding: 5px 25px;
